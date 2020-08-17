@@ -2,7 +2,23 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    dict = {}
+
+    result = []
+
+    for sub_array in array_of_arrays:
+
+        for element in sub_array:
+
+            if element in dict:
+
+                result.append(element)
+
+            else: 
+                
+
+    list_set = set(temp_arr)    
+    
 
     return result
 
