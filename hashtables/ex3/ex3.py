@@ -6,19 +6,20 @@ def intersection(arrays):
 
     result = []
 
-    for sub_array in array_of_arrays:
+    for sub_array in arrays:
 
         for element in sub_array:
 
             if element in dict:
 
-                result.append(element)
+                if element not in result:
+                    
+                    result.append(element)
 
             else: 
-                
 
-    list_set = set(temp_arr)    
-    
+                dict[element] = None
+      
 
     return result
 
