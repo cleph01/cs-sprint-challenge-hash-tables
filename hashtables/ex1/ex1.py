@@ -15,15 +15,11 @@ def get_indices_of_item_weights(weights, length, limit):
 
             found == True
 
-            if target > value:
+            if dict.get(target) > idx:
 
                 return (dict.get(target), idx)
             
-            elif target < value:
-
-                return (idx, dict.get(target))
-
-            else:
+            elif dict.get(target) <= idx:
 
                 return (idx, dict.get(target))
     
@@ -32,6 +28,8 @@ def get_indices_of_item_weights(weights, length, limit):
             dict[value] = idx
 
         else: 
+
+            found = False
 
             return None
 
