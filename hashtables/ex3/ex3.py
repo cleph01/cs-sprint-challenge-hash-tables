@@ -2,7 +2,24 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    dict = {}
+
+    result = []
+
+    for sub_array in arrays:
+
+        for element in sub_array:
+
+            if element in dict:
+
+                if element not in result:
+                    
+                    result.append(element)
+
+            else: 
+
+                dict[element] = None
+      
 
     return result
 
